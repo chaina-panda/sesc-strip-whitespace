@@ -1,4 +1,4 @@
-#include stdio.h
+#include <stdio.h>
 
 int main(){
 
@@ -15,7 +15,7 @@ while(str[i++] == ' '){
 i = i - 1;
 
 for(i ; str[i]; i++){
-if (str[i] != ' '  str[i-1] != ' ') {
+if (str[i] != ' ' || str[i-1] != ' ') {
   str[n++] = str[i];
 }
 }
@@ -24,7 +24,7 @@ if (str[n - 1] == ' ') {
   }
 str[n] = 0;
 
-printf(%s, str);
+printf("%s", str);
 
 return 0;
 }
